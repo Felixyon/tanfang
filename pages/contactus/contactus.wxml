@@ -1,0 +1,69 @@
+<!--pages/contactus/contactus.wxml-->
+<view class="container">
+
+  <!-- <view class="zan-btns" style="margin-top: 30vh;">
+    <button class="zan-btn" bindtap="toggleDialog">
+      获取联系方式
+    </button>
+  </view>
+
+  <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+    <view class="zan-dialog__mask" bindtap="toggleDialog" />
+    <view class="zan-dialog__container">
+      <view style="padding: 100px 0; text-align: center;">请在微信公众号留言</view>
+    </view>
+  </view> -->
+  <view class='title-img'>
+    <image src="../../images/image.jpg"></image>
+  </view>
+  <view class='title-imgd'>
+    <image src="../../images/title-imgd.jpg"></image>
+  </view>
+  <view class='content'>
+    <view class='content-1'>
+      <view class='content-11'>武汉大学 · 穿越时空 预测未来</view>
+      <view class='border'><image src='../../images/border.jpg'></image></view>
+      <view class='content-12'>走在时代发展前沿</view>
+      <view class='content-12'>基于海量数据与事实</view>
+      <view class='border'>
+        <image src='../../images/border.jpg' style='transform:rotate(180deg);'></image>
+      </view>
+      <view class='content-13'>探方网站——IP价值评估平台</view>
+      <view class='border'>
+        <image src='../../images/border2.jpg' style='height:35px;'></image>
+      </view>
+      <view class='content-14'>
+        <view>大量的数据分析</view>
+        <view>系统的综合价值评估</view>
+        <view>为投资人士，网文作者和读者</view>
+        <view>提供全面的指导参考</view>
+      </view>
+
+      <view class='content-15'>—来自武汉大学国际软件学院的14名成员</view>
+      <view class='psb'><image src='../../images/psb.jpg'></image></view>
+      <view class='border' style='width:100%;margin-left:0;'>
+        <image src='../../images/border4.jpg' style='height:20px;width:100%;'></image>
+      </view>
+      <view class='content-16'>致力于当代网络文学IP的</view>
+      <view class='content-16'>长远发展和潜藏价值开发</view>
+      <view class='border' style='width:100%;margin-left:0;'>
+        <image src='../../images/border4.jpg' style='height:20px;width:100%;transform:rotate(180deg);'></image>
+      </view>
+      <view class='content-17'>
+        <view>探方价值评估体系</view>
+        <view>我们带着它走向花旗杯决赛现场</view>
+        <view>希望它能为广大群众服务</view>
+      </view>
+
+        <view class='content-18' style='margin-top:30px;'>武汉大学 · 穿越时空 预测未来</view>
+        <view class='content-18'>2017-11-22</view>
+      
+    </view>
+    <view class='border'></view>
+    <view class='content-2'>
+    </view>
+    <view class='photo'></view>
+    <view class='video'></view>
+  </view>
+
+</view>

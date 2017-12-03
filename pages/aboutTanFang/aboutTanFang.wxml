@@ -1,0 +1,19 @@
+<!--pages/aboutTanFang/aboutTanFang.wxml-->
+<view class="container">
+  <view class='content'>
+    <view class='content-1'>
+      <view class='shengming'>
+        <text>声明</text>
+        <text class='wenzi'>来自武汉大学的14名学生组成穿越时空预测未来队伍，走在时代发展前沿，基于海量数据与事实，开发了探方网站－IP价值评估平台，这是一个通过大量数据分析，对网络文学IP进行综合价值评估的系统，最终为投资人士、网文作者以及读者提供全面的指导参考。我们用该成果参加“花旗杯”比赛，致力于当代网络文学IP的长远发展与潜藏价值的开发，同时，为了更好的用户体验，队员们开放了该系统的小程序，此用途应符合申请要求。</text>
+      </view>
+      <view class='content-18' style='margin-top:-15px;'>2017-11-22</view>
+
+    </view>
+    <view class='border'></view>
+    <view class='content-2'>
+    </view>
+    <view class='photo'></view>
+    <view class='video'></view>
+  </view>
+
+</view>

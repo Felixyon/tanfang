@@ -1,0 +1,33 @@
+<!--收藏页面-collection-->
+<modal title="您确定要删除此收藏么" hidden="{{hidden}}" confirm-text="删除" cancel-text="取消" bindconfirm="confirm" bindcancel="cancel"></modal>
+<view class='container'>
+  <view class='content'>
+    <label>共收藏
+      <text style="color:#71bda3;">{{iplist.length}}</text> 个</label>
+    <label class='editor' bindtap='delet'>{{isDelete?'完成':'编辑'}}</label>
+  </view>
+  <view wx:for="{{iplist}}" wx:for-item="perip" wx:for-index="ipid" class='list'>
+    <view class="{{isDelete?'deleted':'delete'}}">
+      <image src='../../images/delet.jpg' id="{{perip.id}}" bindtap="deleted"></image>
+    </view>
+    <navigator url="../ipinfo/ipinfo?ipid={{perip.id}}" class='listcontent'>
+      <view class='list-img'>
+        <image class="image_frame" src="{{perip.pic}}" mode='widthFix'></image>
+      </view>
+      <view class='list-introduce'>
+        <view>
+          <text class='bookName' style="font-size:{{perip.size}}">{{perip.name}}</text>
+          <text class='author-info'>
+            <text class='author'>{{perip.author}} |</text>
+            <text class='type'>{{perip.tname}} |</text>
+            <text class='kind'>{{perip.isEnd}}</text>
+          </text>
+          <text class='state'>
+          <text class='state-hot'>当前热度：{{perip.heat}}</text>
+          <text class='calculate'>预测涨幅：{{perip.increase}}</text>
+          </text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

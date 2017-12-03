@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/billboard/billboard",
+    "pages/collection/collection",
+    "pages/search/search",
+    "pages/setting/setting",
+    "pages/aboutTanFang/aboutTanFang",
+    "pages/contactus/contactus",
+    "pages/ipinfo/ipinfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#71bda3",
+    "backgroundColor": "#fff",
+    "borderStyle": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/collection/collection",
+        "text": "收藏",
+        "iconPath": "images/favorite.png",
+        "selectedIconPath": "images/favorite_l.png"
+      },
+      {
+        "pagePath": "pages/billboard/billboard",
+        "text": "榜单",
+        "iconPath": "images/ranking.png",
+        "selectedIconPath": "images/ranking_l.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "发现",
+        "iconPath": "images/find.png",
+        "selectedIconPath": "images/find_l.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_l.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/personal-center.png",
+        "selectedIconPath": "images/personal-center_l.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 30000,
+    "connectSocket": 3000,
+    "uploadFile": 3000,
+    "downloadFile": 3000
+  },
+  "debug": false
+}

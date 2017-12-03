@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#2db07a",
+  "navigationBarTitleText": "榜单",
+  "navigationBarTextStyle": "#fff",
+  "enablePullDownRefresh":true
+}

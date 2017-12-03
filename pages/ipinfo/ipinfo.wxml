@@ -1,0 +1,109 @@
+<!--pages/ipinfo/ipinfo.wxml-->
+<view class='ipshortdes'>
+  <view class='ip-top'>
+    <image src="{{ipinfo.pic}}" class='ip-img' mode='widthFix'></image>
+    <view class='ip-top-right'>
+      <view class='ip-basicinfo'>
+        <text class='ip-name'>{{ipinfo.name}}</text>
+        <text class='ip-author'>{{ipinfo.author}}</text>
+      </view>
+      <view class='ip-tags'>
+        <text class='ip-tag'>{{ipinfo.labels[2]}}</text>
+        <text class='ip-tag'>{{ipinfo.labels[3]}}</text>
+      </view>
+    </view>
+    <view class='numberblock'>
+      <text class='decorb'></text>
+      <view class='number'>
+        <text class='tags'>字数</text>
+        <text>{{ipinfo.data.words}}万</text>
+      </view>
+      <view class='number'>
+        <text class='tags'>点击</text>
+        <text>{{ipinfo.data.clicks}}万</text>
+      </view>
+      <view class='number'>
+        <text class='tags'>月票</text>
+        <text>{{ipinfo.data.tickets}}万</text>
+      </view>
+      <view class='number'>
+        <text class='tags'>推荐</text>
+        <text>{{ipinfo.data.recommendations}}万</text>
+      </view>
+      <text class='decora'></text>
+    </view>
+  </view>
+  <!--ip-top结束-->
+  <view class='ip-middle'>
+    <view class='ip-intro'>
+      <text class='title'>简介</text>
+      <text>{{ipinfo.description}}</text>
+    </view>
+    <view class='ip-forcast'>
+      <view class='fbutton'>
+        <text class='ftitle'>当前热度</text>
+        <text>{{ipinfo.heat}}万</text>
+      </view>
+      <view class='fbutton'>
+        <text class='ftitle'>预测涨幅</text>
+        <text>{{ipinfo.increase}}</text>
+      </view>
+      <view class='fbutton'>
+        <text class='ftitle'>加分因素</text>
+        <text>{{ipinfo.factors[0]}}</text>
+      </view>
+    </view>
+  </view>
+  <!--ip-middle结束-->
+  <view class='ip-foot'>
+    <canvas canvas-id="radarCanvas" class="canvas"></canvas>
+    <view class='zhishulist'>
+      <view class='zhishu-list'>
+        <text>作者名气</text>
+        <text class='nu'>{{zhishu.data.value[0]}}</text>
+      </view>
+      <view class='zhishu-list'>
+        <text>主流导向</text>
+        <text class='nu'>{{zhishu.data.value[1]}}</text>
+      </view>
+      <view class='zhishu-list'>
+        <text>读者互动</text>
+        <text class='nu'>{{zhishu.data.value[2]}}</text>
+      </view>
+      <view class='zhishu-list'>
+        <text>更新频率</text>
+        <text class='nu'>{{zhishu.data.value[3]}}</text>
+      </view>
+      <view class='zhishu-list'>
+        <text>情节质量</text>
+        <text class='nu'>{{zhishu.data.value[4]}}</text>
+      </view>
+      <view class='zhishu-list'>
+        <text>改编潜力</text>
+        <text class='nu'>{{zhishu.data.value[5]}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='ip-ciyun-title'>
+    <text>词云展示</text>
+  </view>
+  <view class='ciyun'>
+    <view wx:for="{{ciyun}}" wx:for-item="perword" wx:for-index="wordid" class='ci'>
+      <text class='ciword' style="color:{{perword.uid}}">{{perword.name}}</text>
+    </view>
+  </view>
+  <view class='ip-ciyun-title'>
+  <text>年龄分布</text>
+  </view>
+  <view class="container">
+    <canvas canvas-id="columnCanvas" class="canvas"></canvas>
+  </view>
+  <view class='ip-ciyun-title'>
+  <text>性别分布</text>
+  </view>
+  <view class="container">
+    <canvas canvas-id="pieCanvas" class="canvas" style='height:300px;'></canvas>
+  </view>
+
+
+</view>

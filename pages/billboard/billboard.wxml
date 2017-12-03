@@ -1,0 +1,44 @@
+<!--榜单页面-billboard-->
+<modal title="您确定要添加这本书为收藏么" hidden="{{hidden}}" confirm-text="添加" cancel-text="取消" bindconfirm="confirm" bindcancel="cancel"></modal>
+<view class='container'>
+  <view class='navBar'>
+    <picker bindchange="typeChange" value="{{typeIndex}}" range="{{Type}}">
+      <view>{{Type[typeIndex]}}</view>
+    </picker>
+    <picker bindchange="dateChange" value="{{dateIndex}}" range="{{Date}}">
+      <view>{{Date[dateIndex]}}</view>
+    </picker>
+  </view>
+  <view class='content'>
+    <label bindtap='changebadrank' style="font-weight:bold;color:{{reducolor}}">当前热度</label>
+    <label style='font-weight:bold;margin-left:17px;color:{{zhangfucolor}}' bindtap='changegoodrank'>预测涨幅</label>
+    <label class='editor' bindtap='add'>{{isAdd?'完成':'添加收藏'}}</label>
+  </view>
+  <!-- <view class='content-img'>
+  </view> -->
+    <view wx:for="{{iplist}}" wx:for-item="perip" wx:for-index="ipid" class='list'>
+    <view class="{{isAdd?'deleted':'delete'}}">
+      <image src='../../images/add.jpg' id="{{perip.id}}" bindtap="added"></image>
+    </view>
+    <navigator url="../ipinfo/ipinfo?ipid={{perip.id}}" class='listcontent'>
+      <view class='list-img'>
+        <image class="image_frame" src="{{perip.pic}}"></image>
+      </view>
+      <view class='list-introduce'>
+        <view>
+          <text class='bookName' style="font-size:{{perip.size}}">{{perip.name}}</text>
+          <text class='author-info'>
+          <text class='author'>{{perip.author}} |</text>
+          <text class='type'>{{perip.tname}} |</text>
+          <text class='kind'>{{perip.isEnd}}</text>
+          </text>
+          <text class='state'>
+          <text class='state-hot'>当前热度：{{perip.heat}}</text>
+          <text class='calculate'>预测涨幅：{{perip.increase}}</text>
+          </text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+

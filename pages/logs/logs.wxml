@@ -1,0 +1,92 @@
+<!--logs.wxml-->
+<!--发现列表页面-->
+<view class='panel_all'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:427rpx;'>
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" style="width:100%;height:100%;" mode='scaleToFill' />
+      </swiper-item>
+
+    </block>
+  </swiper>
+  <view class='panel_list'>
+    <view class='panel_outer'>
+      <view class='rows'>
+        <text class='text_recommend'>热度指数推荐</text>
+        <text class='text_more'>更多推荐></text>
+        <navigator url="../ipinfo/ipinfo?ipid={{redulist[0].id}}">
+          <view class='ip_list'>
+            <view class='ip_img'>
+              <image src="{{redulist[0].pic}}" mode='widthFix'></image>
+            </view>
+            <view class='ip_info'>
+              <text>{{redulist[0].name}}</text>
+              <text class='text_author'>{{redulist[0].author}}</text>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="../ipinfo/ipinfo?ipid={{redulist[1].id}}">
+          <view class='ip_list'>
+            <view class='ip_img'>
+              <image src="{{redulist[1].pic}}" mode='widthFix'></image>
+            </view>
+            <view class='ip_info'>
+              <text>{{redulist[1].name}}</text>
+              <text class='text_author'>{{redulist[1].author}}</text>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="../ipinfo/ipinfo?ipid={{redulist[2].id}}">
+          <view class='ip_list'>
+            <view class='ip_img'>
+              <image src="{{redulist[2].pic}}" mode='widthFix'></image>
+            </view>
+            <view class='ip_info'>
+              <text>{{redulist[2].name}}</text>
+              <text class='text_author'>{{redulist[2].author}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class='panel_outer'>
+      <view class='rows'>
+        <text class='text_recommend'>潜力指数推荐</text>
+        <text class='text_more'>更多推荐></text>
+        <navigator url="../ipinfo/ipinfo?ipid={{qianlilist[0].id}}">
+          <view class='ip_list'>
+            <view class='ip_img'>
+              <image src="{{qianlilist[0].pic}}" mode='widthFix'></image>
+            </view>
+            <view class='ip_info'>
+              <text>{{qianlilist[0].name}}</text>
+              <text class='text_author'>{{qianlilist[0].author}}</text>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="../ipinfo/ipinfo?ipid={{qianlilist[1].id}}">
+          <view class='ip_list'>
+            <view class='ip_img'>
+              <image src="{{qianlilist[1].pic}}" mode='widthFix'></image>
+            </view>
+            <view class='ip_info'>
+              <text>{{qianlilist[1].name}}</text>
+              <text class='text_author'>{{qianlilist[1].author}}</text>
+            </view>
+          </view>
+        </navigator>
+        <navigator url="../ipinfo/ipinfo?ipid={{qianlilist[2].id}}">
+          <view class='ip_list'>
+            <view class='ip_img'>
+              <image src="{{qianlilist[2].pic}}" mode='widthFix'></image>
+            </view>
+            <view class='ip_info'>
+              <text>{{qianlilist[2].name}}</text>
+              <text class='text_author'>{{qianlilist[2].author}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

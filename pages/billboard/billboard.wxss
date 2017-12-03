@@ -1,0 +1,140 @@
+/*榜单wxss*/
+image{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.navBar{
+  width: 100%;
+  height: 100rpx;
+  margin: 0;
+  padding: 0;
+}
+
+.navBar picker{
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background-color: #2db07a;
+  font-size: 18px;
+  color: #fff;
+  line-height: 100rpx;
+
+}
+
+label{
+  float: left;
+}
+.editor{
+  margin-left:35%;
+  color:#71bda3;
+  font-size:25rpx;
+}
+.content{
+  width:80%;
+  height: auto;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  
+  margin-left: 10%;
+}
+.content-img{
+  float:left;
+  width:30%;
+  height:40rpx;
+}
+.content image{
+  width:45rpx;
+  height:45rpx;
+  margin-top:13px;
+  overflow: hidden;
+}
+.list{
+  border: 1rpx solid #2db07a;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width:80%;
+  height: 125px;
+  
+}
+.listcontent{
+  width:100%;
+  height:100%;
+}
+.list-img{
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+.list-introduce{
+  float: left;
+  width: 60%;
+  height:80%;
+  margin:0 0 8% 0;
+  
+}
+.list-introduce view label{
+  width: 40%;
+  height: 30px;
+  margin:0 0 0 15px;
+  position: absolute;
+}
+.author-info{
+  clear: both;
+  width: 50%;
+  height:20px; 
+  margin:38px 0 0 15px;
+  font-size: 13px;
+  position: absolute;
+}
+
+.state{
+  width: 40%;
+  margin:70px 0 0 4%;
+  font-size: 14px;
+  position: absolute;
+}
+.state-hot{
+  width: 100%;
+  display: inline-block;
+  line-height: 20px;
+  margin:10px 0 0 0;
+}
+.calculate{
+ width: 100%;
+ margin: 0 0 0 0;
+}
+.bookName{
+  float: left;
+  width: 28%;
+  height: 30px;
+  margin:0 0 0 15px;
+  position: absolute;
+  background-color: #2db07a;
+  color: #fff;
+  left: 34%;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  font-weight: bold;
+  overflow:hidden;
+  word-break:keep-all;
+}
+.deleted{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-right:0;
+  right: 10%;
+}
+.delete{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  margin-right:0;
+  right: 10%;
+  display: none;  
+}
